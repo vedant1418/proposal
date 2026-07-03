@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Someone Special ❤️</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<div id="loading">
+
+<h1>Loading Your Surprise...</h1>
+
+<div class="loader"></div>
+
+</div>
+
+<div id="main">
+
+<h1 id="title"></h1>
+
+<p id="message"></p>
+
+<button id="next" onclick="nextScene()">Continue ❤️</button>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
