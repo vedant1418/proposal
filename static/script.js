@@ -10,7 +10,7 @@ window.onload = () => {
             document.getElementById("main").style.display = "flex";
 
             document.getElementById("title").innerHTML =
-                "❤️ Hey Salomi ❤️";
+                "❤️ Hey Salomi or should i call you fattu❤️";
 
             typeWriter();
 
