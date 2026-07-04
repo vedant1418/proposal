@@ -1,36 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>For Someone Special ❤️</title>
+    <title>❤️ A Special Surprise</title>
 
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}">
 
 </head>
+
 <body>
 
-<div id="loading">
+    <!-- Floating Hearts -->
+    <div class="hearts">
+        <span>❤️</span>
+        <span>💕</span>
+        <span>💖</span>
+        <span>💘</span>
+        <span>❤️</span>
+        <span>💞</span>
+        <span>💕</span>
+        <span>💖</span>
+    </div>
 
-<h1>Loading Your Surprise...</h1>
+    <!-- Loading Screen -->
+    <div id="loading">
 
-<div class="loader"></div>
+        <div class="loader-box">
 
-</div>
+            <div class="heart-loader"></div>
 
-<div id="main">
+            <h1>Preparing Something Special...</h1>
 
-<h1 id="title"></h1>
+            <p>Please wait ❤️</p>
 
-<p id="message"></p>
+        </div>
 
-<button id="next" onclick="nextScene()">Continue ❤️</button>
+    </div>
 
-</div>
+    <!-- Main Card -->
+    <div id="main">
 
-<script src="{{ url_for('static', filename='script.js') }}"></script>
+        <div class="glass-card">
+
+            <i class="fa-solid fa-heart heart-icon"></i>
+
+            <h1 id="title"></h1>
+
+            <p id="message"></p>
+
+            <button id="next" onclick="nextScene()">
+
+                Continue ❤️
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
+
 </html>
